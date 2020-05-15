@@ -1,0 +1,49 @@
+#navbar {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(41, 28, 53);
+    border-bottom: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(20, 143, 214);
+    padding-right: 60px;
+    overflow: hidden;
+    float: left;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+.nonsticky {
+    position: absolute;
+    top: 100vh;
+}  
+
+#navbar a {
+    float: right;
+    height: 50px;
+    padding: 0 35px 0 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Raleway";
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: normal;
+    transition: color 0.5s;    
+    color: white;
+}
+
+#navbar a:hover {
+    color: #e31b6d;
+}
+
+.activetab {
+    color: #e31b6d;
+}
+
+.inactivetab {
+    color: white;
+}
