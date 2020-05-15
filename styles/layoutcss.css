@@ -4,7 +4,7 @@ html, body {
     scroll-behavior: smooth;
 }
 
-/*.preload * {
+.preload * {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     -ms-transition: none !important;
@@ -13,7 +13,7 @@ html, body {
     -moz-animation: none !important;
     -ms-animation: none !important;
     -o-animation: none !important;
-  } */
+  }
 
 
 .mainbody {
