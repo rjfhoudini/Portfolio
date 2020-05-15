@@ -11,8 +11,9 @@ var div4 = document.getElementById("div4");
 
 window.onscroll = function () { stickynav(), activeTab(); }
 var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+
 function stickynav() {
+  var sticky = div1.clientHeight;
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky");
     navbar.classList.remove("nonsticky");
@@ -56,4 +57,13 @@ function activeTab() {
 }
 
 
+window.addEventListener('orientationchange', function () {
+  // After orientationchange, add a one-time resize event
+  var afterOrientationChange = function () {
+    var sticky = navbar.offsetTop;  // YOUR POST-ORIENTATION CODE HERE
+    // Remove the resize event listener after it has executed
+    window.removeEventListener('resize', afterOrientationChange);
+  };
+  window.addEventListener('resize', afterOrientationChange);
+});
 
