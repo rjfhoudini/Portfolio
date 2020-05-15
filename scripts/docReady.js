@@ -1,4 +1,4 @@
-function ready(callbackFunc) {
+/*function ready(callbackFunc) {
     if (document.readyState !== 'loading') {
       // Document is already ready, call the callback directly
       callbackFunc();
@@ -19,4 +19,4 @@ function ready(callbackFunc) {
     // your code here
       var bodyElement = document.getElementById("htmlbody");
     bodyElement.classList.remove("preload");
-  });
+  });*/
