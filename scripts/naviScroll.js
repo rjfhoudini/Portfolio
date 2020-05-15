@@ -7,10 +7,6 @@ var div1 = document.getElementById("div1");
 var div2 = document.getElementById("div2");
 var div3 = document.getElementById("div3");
 var div4 = document.getElementById("div4");
-var div1offset = div1.clientHeight / 2;
-var div2offset = (div2.clientHeight / 2) + div2.offsetTop;
-var div3offset = (div3.clientHeight / 2) + div3.offsetTop;
-var div4offset = (div4.clientHeight / 2) + div4.offsetTop;
 
 
 window.onscroll = function () { stickynav(), activeTab(); }
@@ -28,6 +24,11 @@ function stickynav() {
 }
 
 function activeTab() {
+  var div1offset = div1.clientHeight / 2;
+  var div2offset = (div2.clientHeight / 2) + div2.offsetTop;
+  var div3offset = (div3.clientHeight / 2) + div3.offsetTop;
+  var div4offset = (div4.clientHeight / 2) + div4.offsetTop;
+
   if (window.pageYOffset < div1offset) {
     clearAllTab();
     naviItemH.style.color = "#e31b6d";
@@ -55,16 +56,4 @@ function activeTab() {
 }
 
 
-window.addEventListener('orientationchange', function () {
-  // After orientationchange, add a one-time resize event
-  var afterOrientationChange = function () {
-    var div1offset = div1.clientHeight / 2;
-    var div2offset = (div2.clientHeight / 2) + div2.offsetTop;
-    var div3offset = (div3.clientHeight / 2) + div3.offsetTop;
-    var div4offset = (div4.clientHeight / 2) + div4.offsetTop;   // YOUR POST-ORIENTATION CODE HERE
-    // Remove the resize event listener after it has executed
-    window.removeEventListener('resize', afterOrientationChange);
-  };
-  window.addEventListener('resize', afterOrientationChange);
-});
 
