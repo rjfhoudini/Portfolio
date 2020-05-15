@@ -68,4 +68,3 @@ window.addEventListener('orientationchange', function () {
   window.addEventListener('resize', afterOrientationChange);
 });
 
-window.onorientationchange = function() { window.location.reload(); };
