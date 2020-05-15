@@ -56,9 +56,6 @@ function activeTab() {
   }
 }
 
-
-
-
 function showNav() {  
   var button = document.getElementById("menu");
   menu.style.height = "200px";
