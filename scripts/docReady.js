@@ -19,4 +19,4 @@ function ready(callbackFunc) {
     // your code here
       var bodyElement = document.getElementById("htmlbody");
     bodyElement.classList.remove("preload");
-  }
+  });
