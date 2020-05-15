@@ -4,6 +4,14 @@ html, body {
     scroll-behavior: smooth;
 }
 
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+  }
+
+
 .mainbody {
     max-width: 100%;
     background-color: rgb(53, 0, 37);

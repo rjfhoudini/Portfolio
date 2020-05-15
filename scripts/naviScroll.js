@@ -1,4 +1,3 @@
-
 var naviItemA = document.getElementById("naviA");
 var naviItemH = document.getElementById("naviH");
 var naviItemP = document.getElementById("naviP");
