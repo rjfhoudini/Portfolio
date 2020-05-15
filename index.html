@@ -9,7 +9,9 @@
     <link type="text/css" href="styles/elAnimate.css" rel="stylesheet">
     <!--animation of elements-->
     <link type="text/css" href="styles/layoutcss.css" rel="stylesheet">
-    <!--main layout-->
+    <!--main layout with div1 elements-->
+    <link type="text/css" href="styles/div2elements.css" rel="stylesheet">
+    <!--div2 elements-->
     <link type="text/css" href="styles/fontscss.css" rel="stylesheet">
     <!--fonts-->
     <link type="text/css" href="styles/navigationbar.css" rel="stylesheet">
@@ -44,7 +46,7 @@
                     <span style=" font-weight: bold; color: #e31b6d;">Roseandval Ferrer</span>.</p>
             </div>
             <div animate="fade8s" class="secondline">
-                <p class="hello">I'm a newb software developer.</p>
+                <p class="hello">I'm a software developer.</p>
             </div>
             <a href=#div2 class="viewbutton">
                 <p class="viewwork">&nbsp;View my work&nbsp;
@@ -57,13 +59,18 @@
             <div id="navbar" class="nonsticky">
                 <button id="menu" onclick="showNav()"><i class="fas fa-bars"></i></button>
                 <div id="allnavitems">
-                    <a id="naviH" href=#div1>HOME</a>
-                    <a id="naviA" href=#div2>ABOUT</a>
-                    <a id="naviP" href=#div3>PORTFOLIO</a>
-                    <a id="naviC" href=#div4>CONTACT</a>
+                    <a href=#div1 onclick="hideNav()" id="naviH">HOME</a>
+                    <a href=#div2 onclick="hideNav()" id="naviA">ABOUT</a>
+                    <a onclick="hideNav()" id="naviP" href=#div3>PORTFOLIO</a>
+                    <a onclick="hideNav()" id="naviC" href=#div4>CONTACT</a>
                 </div>
             </div>
-            <div id="div2"></div>
+            <div id="div2">
+                <div class="titlebar">
+                    <div class="title"><p>ABOUT</p></div>
+                    <div class="underline"></div>
+                </div>
+            </div>
             <div id="div3"></div>
             <div id="div4"></div>
         </div>

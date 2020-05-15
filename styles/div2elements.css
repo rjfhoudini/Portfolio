@@ -1,0 +1,23 @@
+.titlebar {
+    height: 140px;
+    width: 100;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.title p {
+    font-family: "RalewayBold";
+    color: rgb(37, 38, 58);
+    font-size: 36px;
+    font-weight: bold;
+    padding-bottom: 6px;
+}
+
+.titlebar .underline {
+    height: 4px;
+    width: 75px;
+    background-color: rgb(37, 38, 58);
+}
