@@ -5,9 +5,9 @@
     border-bottom: 3px;
     border-bottom-style: solid;
     border-bottom-color: rgb(20, 143, 214);
-    padding-right: 60px;
-    overflow: hidden;
-    float: left;
+    padding-right: 5px;
+/*    overflow: hidden;*/
+
 }
 
 .sticky {
@@ -22,9 +22,9 @@
 }  
 
 #navbar a {
-    float: right;
+
     height: 50px;
-    padding: 0 35px 0 35px;
+    padding: 0 25px 0 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,6 +34,7 @@
     font-weight: normal;
     transition: color 0.5s;    
     color: white;
+    background-color: rgb(36, 32, 39);
 }
 
 #navbar a:hover {
@@ -47,3 +48,39 @@
 .inactivetab {
     color: white;
 }
+
+#menu {
+    height: 47px;
+    width: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    background-color: transparent;
+    border-style: none;
+    z-index: 5;
+}
+
+#menu:active, #menu:focus {
+    outline-style: none;
+}
+
+#navbar i {
+    font-size: 30px;
+    color: white;
+}
+
+#allnavitems {
+    display: block;
+    justify-content: flex-end;
+    align-items: center;
+    height: 0px;
+    min-width: 100%;
+    position: absolute;
+    top: 50px;
+    overflow: hidden;
+    transition: height 0.5s;
+    
+}
+
+  

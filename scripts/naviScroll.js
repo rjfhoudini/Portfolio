@@ -7,7 +7,7 @@ var div1 = document.getElementById("div1");
 var div2 = document.getElementById("div2");
 var div3 = document.getElementById("div3");
 var div4 = document.getElementById("div4");
-
+var menu = document.getElementById("allnavitems");
 
 window.onscroll = function () { stickynav(), activeTab(); }
 var navbar = document.getElementById("navbar");
@@ -57,13 +57,25 @@ function activeTab() {
 }
 
 
-window.addEventListener('orientationchange', function () {
-  // After orientationchange, add a one-time resize event
-  var afterOrientationChange = function () {
-    var sticky = navbar.offsetTop;  // YOUR POST-ORIENTATION CODE HERE
-    // Remove the resize event listener after it has executed
-    window.removeEventListener('resize', afterOrientationChange);
-  };
-  window.addEventListener('resize', afterOrientationChange);
-});
 
+
+function showNav() {  
+  var button = document.getElementById("menu");
+  menu.style.height = "200px";
+  button.setAttribute("onclick", "hideNav()");
+}
+
+function hideNav() {
+  var button = document.getElementById("menu");
+  menu.style.height = "";
+  button.setAttribute("onclick", "showNav()");
+}
+
+function backToNorm() {
+  var outWidth = window.outerWidth;
+  if (outWidth > 600) {  
+    hideNav();
+  }
+}
+
+window.addEventListener("resize", backToNorm);

@@ -22,7 +22,7 @@
 
 .boxes li:hover {
     transition: filter 0.5s;
-    filter: blur(1px); 
+    filter: blur(1px) opacity(.4); 
 }
 
 .boxes li {
