@@ -2,10 +2,10 @@ var naviItemA = document.getElementById("naviA");
 var naviItemH = document.getElementById("naviH");
 var naviItemP = document.getElementById("naviP");
 var naviItemC = document.getElementById("naviC");
-var div1 = document.getElementById("div1");
-var div2 = document.getElementById("div2");
-var div3 = document.getElementById("div3");
-var div4 = document.getElementById("div4");
+var div1 = document.getElementById("Home");
+var div2 = document.getElementById("About");
+var div3 = document.getElementById("Portfolio");
+var div4 = document.getElementById("Contact");
 var menu = document.getElementById("allnavitems");
 
 window.onscroll = function () { stickynav(), activeTab(); }
