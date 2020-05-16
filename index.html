@@ -22,6 +22,8 @@
     <!--icons-->
     <link type="text/css" href="styles/screenwidthDIV1.css" rel="stylesheet">
     <!--responsive screen-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--animation on scroll-->
 
 </Head>
 
@@ -67,16 +69,44 @@
             </div>
             <div id="div2">
                 <div class="titlebar">
-                    <div class="title"><p>ABOUT</p></div>
-                    <div class="underline"></div>
+                    <div data-aos="fade-right" data-aos-duration="1500" class="title">
+                        <p>ABOUT</p>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="1500" class="underline"></div>
                 </div>
+                <div id="div2contents">
+                    <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300" class="col-s-6 col-3" id="aesthetic">
+                        <img class="aboutimage" src="images/Aesthetic.png" alt="beauty">
+                        <div class="texttitle">Aesthetic</div>
+                        <div class="div2text">Creativity is contagious.<br> I love making pages come to life.</div>
+                    </div>
+                    <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500" class="col-s-6 col-3" id="fast">
+                        <img class="aboutimage" src="images/Fast.jpg" alt="fastload">
+                        <div class="texttitle">Fast</div>
+                        <div class="div2text">Fast load times and lag free user experience is my priority.</div>
+                    </div>
+                    <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="700" class="col-s-6 col-3" id="responsive">
+                        <img class="aboutimage" src="images/Responsive.png" alt="responsive">
+                        <div class="texttitle">Responsive</div>
+                        <div class="div2text">Big or small, my layouts will work on any device.</div>
+                    </div>
+                    <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="900" class="col-s-6 col-3" id="optimized">
+                        <img class="aboutimage" src="images/Optimized.png" alt="optimum">
+                        <div class="texttitle">Optimized</div>
+                        <div class="div2text">Page quality and efficiency observed. Maximum performance at all times.
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div id="div3"></div>
             <div id="div4"></div>
         </div>
     </div>
-    
+
     <script src="scripts/naviScroll.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 
 </html>

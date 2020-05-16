@@ -97,6 +97,8 @@ html, body {
     width: 100%;
     background-color: white;   
     min-height: 100vh;
+    display: block;
+    justify-content: center;
 
 }
 
@@ -104,6 +106,7 @@ html, body {
     width: 100%;
     min-height: 100vh;
     background-color: yellow;
+
 }
 
 #div4 {
