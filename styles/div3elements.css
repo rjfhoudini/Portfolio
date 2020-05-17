@@ -1,0 +1,10 @@
+#skills {
+    background-color: yellow;
+    min-height: 100vh;
+}
+
+#titlecontent {
+    background-color: greenyellow;
+    min-height: 100vh;
+    display: block;
+}

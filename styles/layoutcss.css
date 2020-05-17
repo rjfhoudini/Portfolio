@@ -26,6 +26,7 @@ html, body {
     height: 100%;
     background-color: transparent;
     overflow: hidden;    
+    display: block;
 }
 
 .maincontent {
@@ -93,7 +94,7 @@ html, body {
     text-decoration: none;
 }
 
-#About {
+#MyWork {
     width: 100%;
     background-color: white;   
     min-height: 100vh;
@@ -102,11 +103,10 @@ html, body {
 
 }
 
-#Portfolio {
+#AboutMe {
     width: 100%;
     min-height: 100vh;
-    background-color: yellow;
-
+    background-color: rgb(231, 231, 231);
 }
 
 #Contact {

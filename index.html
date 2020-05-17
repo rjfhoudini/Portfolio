@@ -6,17 +6,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    
+
+
     <link type="text/css" href="styles/fontscss.css" rel="stylesheet">
     <!--fonts-->
     <link type="text/css" href="styles/elAnimate.css" rel="stylesheet">
-    <!--animation of elements-->    
+    <!--animation of elements-->
     <link type="text/css" href="styles/layoutcss.css" rel="stylesheet">
     <!--main layout with div1 elements-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--animation on scroll-->
     <link type="text/css" href="styles/div2elements.css" rel="stylesheet">
-    <!--div2 elements-->    
+    <!--div2 elements-->
+    <link type="text/css" href="styles/div3elements.css" rel="stylesheet">
+    <!--div3 elements-->
     <link type="text/css" href="styles/navigationbar.css" rel="stylesheet">
     <!--navigation bar-->
     <link type="text/css" href="styles/div1BGanimation.css" rel="stylesheet">
@@ -25,7 +28,7 @@
     <!--icons-->
     <link type="text/css" href="styles/screenwidthDIV1.css" rel="stylesheet">
     <!--responsive screen-->
-    
+
 
 </Head>
 
@@ -52,7 +55,7 @@
             <div animate="fade8s" class="secondline">
                 <p class="hello">I'm a software developer.</p>
             </div>
-            <a href=#About class="viewbutton">
+            <a href=#MyWork class="viewbutton">
                 <p class="viewwork">&nbsp;View my work&nbsp;
                     <i class='fas fa-angle-right' color:white></i>
                 </p>
@@ -64,51 +67,67 @@
                 <button id="menu" onclick="showNav()"><i class="fas fa-bars"></i></button>
                 <div id="allnavitems">
                     <a href=#Home onclick="hideNav()" id="naviH">HOME</a>
-                    <a href=#About onclick="hideNav()" id="naviA">ABOUT</a>
-                    <a onclick="hideNav()" id="naviP" href=#Portfolio>PORTFOLIO</a>
+                    <a href=#MyWork onclick="hideNav()" id="naviA">MY WORK</a>
+                    <a onclick="hideNav()" id="naviP" href=#AboutMe>ABOUT ME</a>
                     <a onclick="hideNav()" id="naviC" href=#Contact>CONTACT</a>
                 </div>
             </div>
-            <div id="About">
+            <div id="MyWork">
                 <div class="titlebar">
                     <div data-aos="fade-right" data-aos-duration="1500" class="title">
-                        <p>ABOUT</p>
+                        <p>MY WORK</p>
                     </div>
                     <div data-aos="fade-left" data-aos-duration="1500" class="underline"></div>
                 </div>
                 <div id="div2contents">
-                    <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300" class="col-s-6 col-3" id="aesthetic">
+                    <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300" class="col-s-6 col-3"
+                        id="aesthetic">
                         <img class="aboutimage" src="images/Aesthetic.png" alt="beauty">
                         <div class="texttitle">Aesthetic</div>
                         <div class="div2text">Creativity is contagious.<br> I love making pages come to life.</div>
                     </div>
-                    <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400" class="col-s-6 col-3" id="fast">
+                    <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400" class="col-s-6 col-3"
+                        id="fast">
                         <img class="aboutimage" src="images/Fast.jpg" alt="fastload">
                         <div class="texttitle">Fast</div>
                         <div class="div2text">Fast load times and lag free user experience is my priority.</div>
                     </div>
-                    <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500" class="col-s-6 col-3" id="responsive">
+                    <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500" class="col-s-6 col-3"
+                        id="responsive">
                         <img class="aboutimage" src="images/Responsive.png" alt="responsive">
                         <div class="texttitle">Responsive</div>
                         <div class="div2text">Big or small, my layouts will work on any device.</div>
                     </div>
-                    <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600" class="col-s-6 col-3" id="optimized">
+                    <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600" class="col-s-6 col-3"
+                        id="optimized">
                         <img class="aboutimage" src="images/Optimized.png" alt="optimum">
                         <div class="texttitle">Optimized</div>
                         <div class="div2text">Page quality and efficiency observed. Maximum performance at all times.
                         </div>
                     </div>
                 </div>
+            </div>
+            <div id="AboutMe">
+                <div id="titlecontent" class="col-s-12 col-8">
+                    <div class="titlebar">
+                        <div data-aos="fade-right" data-aos-duration="1500" class="title">
+                            <p>ABOUT ME</p>
+                        </div>
+                        <div data-aos="fade-left" data-aos-duration="1500" class="underline"></div>
+                    </div>
+                    
+                   
+                </div>
+                <div id="skills" class="col-s-12 col-4"></div>
 
             </div>
-            <div id="Portfolio"></div>
             <div id="Contact"></div>
+            </div>
         </div>
-    </div>
 
-    <script src="scripts/naviScroll.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
+        <script src="scripts/naviScroll.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
 </body>
 
 </html>

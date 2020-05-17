@@ -3,8 +3,8 @@ var naviItemH = document.getElementById("naviH");
 var naviItemP = document.getElementById("naviP");
 var naviItemC = document.getElementById("naviC");
 var div1 = document.getElementById("Home");
-var div2 = document.getElementById("About");
-var div3 = document.getElementById("Portfolio");
+var div2 = document.getElementById("MyWork");
+var div3 = document.getElementById("AboutMe");
 var div4 = document.getElementById("Contact");
 var menu = document.getElementById("allnavitems");
 

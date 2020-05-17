@@ -1,6 +1,6 @@
 .titlebar {
     height: 140px;
-    width: 100;
+    width: 100%;
     background-color: transparent;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@
 
 .titlebar .underline {
     height: 4px;
-    width: 75px;
+    width: 120px;
     background-color: rgb(37, 38, 58);
 }
 
@@ -30,7 +30,7 @@
     clear: both;
     display: table;
     background-color: transparent;
-    padding: 40px;
+    padding: 60px 40px 40px 40px;
 }
 
 [class*="col-"] {
